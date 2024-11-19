@@ -6,9 +6,10 @@ activate_service = Service("ActivateService")
 
 
 @activate_service.handler("active_read_file_wf")
-async def activate_workflow(context: Context, workflow_id: str):
+async def activate_workflow(context: Context, request: dict):
+    file_path = request["file_path"]
     async with httpx.AsyncClient() as client:
-        data = {"file_path": "/home/felipecc/projetos/restate-webserice/data/users.csv"}
+        data = {"file_path": file_path}
         workflow_id = str(uuid.uuid4())[:8]
 
         response = await client.post(

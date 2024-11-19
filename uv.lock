@@ -466,7 +466,7 @@ wheels = [
 ]
 
 [[package]]
-name = "restate-webserice"
+name = "restate-webservice"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
@@ -475,6 +475,7 @@ dependencies = [
     { name = "hypercorn" },
     { name = "restate-sdk" },
     { name = "sqlmodel" },
+    { name = "uvicorn" },
 ]
 
 [package.metadata]
@@ -484,6 +485,7 @@ requires-dist = [
     { name = "hypercorn", specifier = ">=0.17.3" },
     { name = "restate-sdk", specifier = ">=0.4.1" },
     { name = "sqlmodel", specifier = ">=0.0.22" },
+    { name = "uvicorn", specifier = ">=0.32.0" },
 ]
 
 [[package]]

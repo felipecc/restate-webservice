@@ -1,5 +1,5 @@
 [project]
-name = "restate-webserice"
+name = "restate-webservice"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -10,4 +10,5 @@ dependencies = [
     "hypercorn>=0.17.3",
     "restate-sdk>=0.4.1",
     "sqlmodel>=0.0.22",
+    "uvicorn>=0.32.0",
 ]

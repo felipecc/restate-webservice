@@ -17,7 +17,7 @@ uv run fastapi dev app/main.py
 ```sh
 curl localhost:8080/ReadFileWorkflow/12345/run \
     -H 'content-type: application/json' \
-    -d '{"file_path": "/home/felipecc/projetos/restate-webserice/data/users.csv"}'
+    -d '{"file_path": "/home/felipecc/projetos/restate-webservice/data/users.csv"}'
 ```
 
 ## Curl invoke
@@ -25,7 +25,7 @@ curl localhost:8080/ReadFileWorkflow/12345/run \
 ```sh
 curl localhost:8080/ActivateService/active_read_file_wf \
     -H 'content-type: application/json' \
-    -d '{"file_path": "/home/felipecc/projetos/restate-webserice/data/users.csv"}'
+    -d '{"file_path": "/home/felipecc/projetos/restate-webservice/data/users.csv"}'
 ```    
 
 ## Cancel invoke
